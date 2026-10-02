@@ -1,0 +1,289 @@
+Linux Commands
+│
+├── 1. File & Directory Management
+│   ├── pwd
+│   │   ├── Prints current working directory.
+│   │   ├── Shows absolute path.
+│   │   └── Used in scripts to determine location.
+│   │
+│   ├── ls
+│   │   ├── Lists directory contents.
+│   │   ├── ls -l : Long listing
+│   │   ├── ls -a : Hidden files
+│   │   ├── ls -lh : Human readable sizes
+│   │   └── ls -R : Recursive listing
+│   │
+│   ├── cd
+│   │   ├── Changes current directory.
+│   │   ├── cd ..
+│   │   ├── cd ~
+│   │   └── cd -
+│   │
+│   ├── mkdir
+│   │   ├── Creates directory.
+│   │   ├── mkdir dir
+│   │   └── mkdir -p parent/child
+│   │
+│   ├── rmdir
+│   │   ├── Removes empty directory.
+│   │   └── Cannot remove non-empty folders.
+│   │
+│   ├── touch
+│   │   ├── Creates empty file.
+│   │   └── Updates timestamp.
+│   │
+│   ├── cp
+│   │   ├── Copies files.
+│   │   ├── cp file1 file2
+│   │   ├── cp -r directory
+│   │   └── cp -a preserve attributes
+│   │
+│   ├── mv
+│   │   ├── Moves files.
+│   │   ├── Renames files.
+│   │   └── Works across directories.
+│   │
+│   ├── rm
+│   │   ├── Removes files.
+│   │   ├── rm -r
+│   │   ├── rm -f
+│   │   └── rm -rf
+│   │
+│   ├── find
+│   │   ├── Search files.
+│   │   ├── By name
+│   │   ├── By size
+│   │   ├── By permissions
+│   │   └── Execute commands on results
+│   │
+│   ├── locate
+│   ├── tree
+│   ├── stat
+│   ├── file
+│   ├── basename
+│   ├── dirname
+│   ├── realpath
+│   └── rename
+│
+├── 2. Viewing Files
+│   ├── cat
+│   ├── tac
+│   ├── less
+│   ├── more
+│   ├── head
+│   ├── tail
+│   ├── nl
+│   ├── od
+│   ├── strings
+│   └── xxd
+│
+├── 3. Text Processing
+│   ├── grep
+│   ├── egrep
+│   ├── fgrep
+│   ├── sed
+│   ├── awk
+│   ├── cut
+│   ├── paste
+│   ├── sort
+│   ├── uniq
+│   ├── tr
+│   ├── fmt
+│   ├── fold
+│   ├── rev
+│   ├── tee
+│   ├── wc
+│   ├── split
+│   ├── join
+│   ├── comm
+│   ├── diff
+│   ├── cmp
+│   └── patch
+│
+├── 4. Permissions & Ownership
+│   ├── chmod
+│   ├── chown
+│   ├── chgrp
+│   ├── umask
+│   ├── getfacl
+│   ├── setfacl
+│   ├── lsattr
+│   └── chattr
+│
+├── 5. User Management
+│   ├── useradd
+│   ├── adduser
+│   ├── usermod
+│   ├── userdel
+│   ├── passwd
+│   ├── id
+│   ├── groups
+│   ├── whoami
+│   ├── who
+│   ├── w
+│   ├── last
+│   ├── su
+│   └── sudo
+│
+├── 6. Process Management
+│   ├── ps
+│   ├── top
+│   ├── htop
+│   ├── kill
+│   ├── killall
+│   ├── pkill
+│   ├── nice
+│   ├── renice
+│   ├── jobs
+│   ├── fg
+│   ├── bg
+│   ├── nohup
+│   ├── disown
+│   └── time
+│
+├── 7. Disk Management
+│   ├── df
+│   ├── du
+│   ├── lsblk
+│   ├── blkid
+│   ├── fdisk
+│   ├── parted
+│   ├── mkfs
+│   ├── fsck
+│   ├── mount
+│   ├── umount
+│   ├── swapon
+│   ├── swapoff
+│   └── tune2fs
+│
+├── 8. Networking
+│   ├── ip
+│   ├── ifconfig
+│   ├── ping
+│   ├── traceroute
+│   ├── tracepath
+│   ├── ss
+│   ├── netstat
+│   ├── dig
+│   ├── nslookup
+│   ├── host
+│   ├── curl
+│   ├── wget
+│   ├── ssh
+│   ├── scp
+│   ├── sftp
+│   ├── rsync
+│   ├── nc
+│   ├── telnet
+│   ├── tcpdump
+│   └── nmap
+│
+├── 9. Package Management
+│   ├── apt
+│   ├── apt-get
+│   ├── dpkg
+│   ├── snap
+│   ├── flatpak
+│   ├── yum
+│   ├── dnf
+│   ├── rpm
+│   ├── pacman
+│   ├── zypper
+│   └── emerge
+│
+├── 10. Archives & Compression
+│   ├── tar
+│   ├── gzip
+│   ├── gunzip
+│   ├── bzip2
+│   ├── xz
+│   ├── zip
+│   ├── unzip
+│   ├── 7z
+│   ├── cpio
+│   └── ar
+│
+├── 11. System Information
+│   ├── uname
+│   ├── hostname
+│   ├── hostnamectl
+│   ├── uptime
+│   ├── free
+│   ├── vmstat
+│   ├── lscpu
+│   ├── lsusb
+│   ├── lspci
+│   ├── dmidecode
+│   ├── dmesg
+│   ├── journalctl
+│   └── neofetch
+│
+├── 12. Services & Boot
+│   ├── systemctl
+│   ├── service
+│   ├── loginctl
+│   ├── timedatectl
+│   ├── shutdown
+│   ├── reboot
+│   ├── poweroff
+│   ├── init
+│   └── runlevel
+│
+├── 13. Shell & Scripting
+│   ├── bash
+│   ├── sh
+│   ├── zsh
+│   ├── env
+│   ├── export
+│   ├── alias
+│   ├── unalias
+│   ├── source
+│   ├── history
+│   ├── echo
+│   ├── printf
+│   ├── read
+│   ├── test
+│   ├── expr
+│   ├── xargs
+│   ├── seq
+│   └── yes
+│
+├── 14. Scheduling
+│   ├── cron
+│   ├── crontab
+│   ├── at
+│   ├── batch
+│   └── systemd timers
+│
+├── 15. Development Tools
+│   ├── gcc
+│   ├── g++
+│   ├── make
+│   ├── cmake
+│   ├── gdb
+│   ├── strace
+│   ├── ltrace
+│   ├── git
+│   ├── objdump
+│   ├── nm
+│   ├── readelf
+│   └── valgrind
+│
+└── 16. Miscellaneous
+    ├── man
+    ├── info
+    ├── help
+    ├── which
+    ├── whereis
+    ├── type
+    ├── clear
+    ├── watch
+    ├── script
+    ├── cal
+    ├── date
+    ├── sleep
+    ├── watch
+    ├── bc
+    ├── factor
+    ├── yes
+    └── timeout
